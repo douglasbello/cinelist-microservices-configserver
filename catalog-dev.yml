@@ -2,9 +2,6 @@ spring:
   main:
     lazy-initialization: true
 
-  profiles:
-    active: dev
-
   jpa:
     open-in-view: true
 

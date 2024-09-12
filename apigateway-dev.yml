@@ -13,6 +13,7 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
+    prefer-ip-address: false
 
 cloud:
   gateway:

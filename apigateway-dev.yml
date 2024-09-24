@@ -21,15 +21,15 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:8085/realms/demo/protocol/openid-connect/certs
+          jwk-set-uri: http://localhost:8085/realms/cinelist/protocol/openid-connect/certs
       client:
         provider:
           keycloak:
-            issuer-uri: http://localhost:8085/realms/demo
+            issuer-uri: http://localhost:8085/realms/cinelist
       registration:
         spring-with-test-scope:
           provider: keycloak
-          client-id: spring-with-test-scope
+          client-id: auth-service-1
           client-secret: vUcAz4VSxznvLD9M5LERpbJfKavEfnyz
           authorization-grant-type: authorization_code
           scope: openid
